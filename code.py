@@ -9,7 +9,7 @@ model = KMeans(n_clusters=4)
 model.fit(my_data)
 labels = model.predict(my_data)
 print(labels)
-model = TSNE(n_components=3, perplexity=40, learning_rate=100, n_iter=1000, random_state=0)
+model = TSNE(n_components=2, perplexity=40, learning_rate=100, n_iter=1000, random_state=0)
 transformed = model.fit_transform(my_data)
 xs = transformed[:, 0]
 ys = transformed[:, 1]
